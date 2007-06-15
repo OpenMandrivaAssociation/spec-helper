@@ -1,18 +1,20 @@
 %define name spec-helper
-%define version 0.24
-%define release %mkrel 2
+%define version 0.25
+%define release %mkrel 1
 
-Summary: Tools to ease the creation of rpm packages
-Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0: %{name}-%{version}.tar.bz2
-URL: http://www.mandriva.com
-License: GPL
-Group: Development/Other
-BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildArch: noarch
-Requires: perl /sbin/ldconfig findutils /usr/bin/python gettext
+Name:       %{name}
+Version:    %{version}
+Release:    %{release}
+Summary:    Tools to ease the creation of rpm packages
+License:    GPL
+Group:      Development/Other
+URL:        http://svn.mandriva.com/svn/soft/rpm/spec-helper
+Source:     %{name}-%{version}.tar.bz2
+Requires:   python-base
+Requires:   findutils
+Requires:   gettext
+BuildArch:  noarch
+BuildRoot: %{_tmppath}/%{name}-%{version}
 
 %description
 Tools to ease the creation of rpm packages for the Mandriva Linux distribution.
@@ -24,11 +26,11 @@ Compress man pages using bzip2, strip executables, convert links...
 %build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT bindir=%{_bindir} rpmmacrosdir=%_sys_macros_dir 
+rm -rf %{buildroot}
+make install DESTDIR=%{buildroot} bindir=%{_bindir} rpmmacrosdir=%_sys_macros_dir 
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
@@ -36,5 +38,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_bindir}/macroszification
 %{_datadir}/spec-helper
 %_sys_macros_dir/%{name}.macros
-
-
