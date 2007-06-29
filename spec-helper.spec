@@ -1,5 +1,5 @@
 %define name spec-helper
-%define version 0.26
+%define version 0.26.1
 %define release %mkrel 1
 
 Name:       %{name}
@@ -34,7 +34,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS Howto-spec-helper ChangeLog
+%doc AUTHORS README NEWS
 %{_bindir}/macroszification
 %{_datadir}/spec-helper
 %_sys_macros_dir/%{name}.macros
