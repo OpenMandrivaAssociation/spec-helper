@@ -1,5 +1,5 @@
 %define name spec-helper
-%define version 0.26.1
+%define version 0.27
 %define release %mkrel 1
 
 Name:       %{name}
@@ -22,8 +22,6 @@ Compress man pages using bzip2, strip executables, convert links...
 
 %prep
 %setup -q
-
-%build
 
 %install
 rm -rf %{buildroot}
