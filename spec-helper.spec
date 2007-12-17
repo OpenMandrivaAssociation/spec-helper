@@ -14,7 +14,6 @@ Requires:   python-base
 Requires:   findutils
 Requires:   gettext
 BuildArch:  noarch
-BuildRoot: %{_tmppath}/%{name}-%{version}
 
 %description
 Tools to ease the creation of rpm packages for the Mandriva Linux distribution.
