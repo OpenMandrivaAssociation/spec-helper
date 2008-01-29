@@ -1,5 +1,5 @@
 %define name spec-helper
-%define version 0.27.2
+%define version 0.28.0
 %define release %mkrel 1
 
 Name:       %{name}
