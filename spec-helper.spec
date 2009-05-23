@@ -1,5 +1,5 @@
 %define name spec-helper
-%define version 0.30.3
+%define version 0.30.4
 %define release %mkrel 1
 
 Name:       %{name}
@@ -26,6 +26,9 @@ Compress man pages using bzip2, strip executables, convert links...
 %install
 rm -rf %{buildroot}
 make install DESTDIR=%{buildroot} bindir=%{_bindir} rpmmacrosdir=%_sys_macros_dir 
+
+%check
+make test
 
 %clean
 rm -rf %{buildroot}
