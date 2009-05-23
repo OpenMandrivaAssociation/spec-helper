@@ -13,6 +13,7 @@ Source:     %{name}-%{version}.tar.bz2
 Requires:   python-base
 Requires:   findutils
 Requires:   gettext
+BuildRequires:  perl(IPC::Run)
 BuildArch:  noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
