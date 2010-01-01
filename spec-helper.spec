@@ -1,5 +1,5 @@
 %define name spec-helper
-%define version 0.30.6
+%define version 0.31.0
 %define release %mkrel 1
 
 Name:       %{name}
@@ -10,10 +10,10 @@ License:    GPL
 Group:      Development/Other
 URL:        http://svn.mandriva.com/svn/soft/rpm/spec-helper
 Source:     %{name}-%{version}.tar.bz2
-Requires:   python-base
 Requires:   findutils
 Requires:   gettext
 BuildRequires:  perl(IPC::Run)
+BuildRequires:  perl(Digest::MD5)
 BuildArch:  noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
@@ -36,7 +36,7 @@ rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS README NEWS
+%doc README NEWS
 %{_bindir}/macroszification
 %{_datadir}/spec-helper
 %_sys_macros_dir/%{name}.macros
