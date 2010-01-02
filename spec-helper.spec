@@ -14,6 +14,7 @@ Requires:   findutils
 Requires:   gettext
 BuildRequires:  perl(IPC::Run)
 BuildRequires:  perl(Digest::MD5)
+BuildRequires:  perl(File::Slurp)
 BuildArch:  noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}
 
