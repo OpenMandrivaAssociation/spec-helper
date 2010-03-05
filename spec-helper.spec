@@ -1,9 +1,5 @@
-%define name spec-helper
-%define version 0.31.1
-%define release %mkrel 1
-
 Name:		spec-helper
-Version:	0.31.1
+Version:	0.31.2
 Release:	%mkrel 1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
