@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.2
+Version:	0.31.3
 Release:	%mkrel 1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
