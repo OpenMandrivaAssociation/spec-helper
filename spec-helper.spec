@@ -17,14 +17,15 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Tools to ease the creation of rpm packages for the Mandriva Linux distribution.
-Compress man pages using bzip2, strip executables, convert links...
+Compress man pages using xz, convert links and perform some sanitizing on
+packages built...
 
 %prep
 %setup -q
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std bindir=%{_bindir} rpmmacrosdir=%_sys_macros_dir 
+%makeinstall_std bindir=%{_bindir} rpmmacrosdir=%{_sys_macros_dir}
 
 %check
 make test
@@ -37,4 +38,4 @@ rm -rf %{buildroot}
 %doc README NEWS
 %{_bindir}/macroszification
 %{_datadir}/spec-helper
-%_sys_macros_dir/%{name}.macros
+%{_sys_macros_dir}/%{name}.macros
