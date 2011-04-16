@@ -1,6 +1,6 @@
 Name:		spec-helper
 Version:	0.31.6
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
@@ -13,6 +13,14 @@ BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Slurp)
 BuildRequires:	perl(List::MoreUtils)
 BuildArch:	noarch
+Requires:	perl(Cwd)
+Requires:	perl(Fcntl)
+Requires:	perl(File::Basename)
+Requires:	perl(File::Find)
+Requires:	perl(File::Path)
+Requires:	perl(File::Slurp)
+Requires:	perl(File::Temp)
+Requires:	perl(List::MoreUtils)
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
