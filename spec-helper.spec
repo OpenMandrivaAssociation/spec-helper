@@ -16,7 +16,6 @@ BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Slurp)
 BuildRequires:	perl(List::MoreUtils)
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Tools to ease the creation of rpm packages for the Mandriva Linux distribution.
@@ -27,17 +26,12 @@ packages built...
 %setup -q
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std bindir=%{_bindir} rpmmacrosdir=%{_sys_macros_dir}
 
 %check
 make test
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc README NEWS
 %{_bindir}/macroszification
 %{_datadir}/spec-helper
