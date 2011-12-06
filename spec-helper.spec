@@ -1,6 +1,9 @@
+# broken in current rpm, will be fixed in next rpm release
+%define	_sys_macros_dir	%{_sysconfdir}/rpm/macros.d
+
 Name:		spec-helper
-Version:	0.31.6
-Release:	%mkrel 3
+Version:	0.31.7
+Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
