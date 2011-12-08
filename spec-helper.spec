@@ -1,8 +1,5 @@
-# broken in current rpm, will be fixed in next rpm release
-%define	_sys_macros_dir	%{_sysconfdir}/rpm/macros.d
-
 Name:		spec-helper
-Version:	0.31.7
+Version:	0.31.8
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -15,6 +12,7 @@ BuildRequires:	perl(IPC::Run)
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Slurp)
 BuildRequires:	perl(List::MoreUtils)
+BuildRequires:	rpm >= 1:5.4.4-21
 BuildArch:	noarch
 
 %description
