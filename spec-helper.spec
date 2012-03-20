@@ -23,6 +23,8 @@ packages built...
 %prep
 %setup -q
 
+%build
+
 %install
 %makeinstall_std bindir=%{_bindir} rpmmacrosdir=%{_sys_macros_dir}
 
