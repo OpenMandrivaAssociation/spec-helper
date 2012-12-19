@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.18
+Version:	0.31.19
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -37,6 +37,11 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.19-1
+- new version:
+	o rewrite check_elf_files in shell script
+	o skip symlinks for fix_eol
+
 * Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.18-1
 - make sure fix_eol doesn't exit with error code
 
@@ -54,11 +59,11 @@ make test
 * Fri Sep 28 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.16-1
 + Revision: 817883
 - new version:
-        o get rid of .la symlinks as well
-        o don't relativize symlinks to /dev, /proc & /sys (inspired by similar
-  	  change by colin in Mageia)
-        o drop dead 'translate_menu' script
-        o rewrite 'relink_symlinks' perl script in shell
+	o get rid of .la symlinks as well
+	o don't relativize symlinks to /dev, /proc & /sys (inspired by similar
+	  change by colin in Mageia)
+	o drop dead 'translate_menu' script
+	o rewrite 'relink_symlinks' perl script in shell
 
 * Wed Jun 06 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.15-1
 + Revision: 802910
@@ -98,7 +103,7 @@ make test
 + Revision: 738086
 - remove legacy rpm stuff
 - new version:
-  	o remove libtool .la files
+	o remove libtool .la files
 
 * Fri May 06 2011 Funda Wang <fwang@mandriva.org> 0.31.6-3
 + Revision: 669799
