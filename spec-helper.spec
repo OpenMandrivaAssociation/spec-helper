@@ -1,6 +1,6 @@
 Name:		spec-helper
-Version:	0.31.16
-Release:	2
+Version:	0.31.17
+Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
@@ -11,7 +11,6 @@ Requires:	gettext
 BuildRequires:	perl(IPC::Run)
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Slurp)
-BuildRequires:	perl(List::MoreUtils)
 BuildRequires:	rpm >= 1:5.4.4-21
 BuildArch:	noarch
 
@@ -38,8 +37,15 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.17-1
+- new version:
+	o rewrite fix_eol in shell script
+	o rewrite clean_files script in shell script
+	o free gprintify from dependency on perl(List::MoreUtils)
+
 * Wed Dec 12 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.16-2
 - rebuild on ABF
+
 * Fri Sep 28 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.16-1
 + Revision: 817883
 - new version:
