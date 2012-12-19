@@ -1,3 +1,6 @@
+# just workaround fix_eol broken in previous version..
+%define dont_fix_eol 1
+
 Name:		spec-helper
 Version:	0.31.18
 Release:	1
