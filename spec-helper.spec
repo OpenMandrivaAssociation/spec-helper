@@ -15,7 +15,7 @@ BuildRequires:	rpm >= 1:5.4.4-21
 BuildArch:	noarch
 
 %description
-Tools to ease the creation of rpm packages for the Mandriva Linux distribution.
+Tools to ease the creation of rpm packages for the %{distribution} distribution.
 Compress man pages using xz, convert links and perform some sanitizing on
 packages built...
 
@@ -38,6 +38,7 @@ make test
 
 %changelog
 * Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.17-1
+- use %%{distribution} macro
 - new version:
 	o rewrite fix_eol in shell script
 	o rewrite clean_files script in shell script
