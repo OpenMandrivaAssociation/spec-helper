@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.17
+Version:	0.31.18
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -37,6 +37,9 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.18-1
+- make sure fix_eol doesn't exit with error code
+
 * Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.17-1
 - update url
 - use %%{distribution} macro
