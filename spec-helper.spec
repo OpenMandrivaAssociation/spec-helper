@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.19
+Version:	0.31.20
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -37,6 +37,15 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.20-1
+- new version:
+	o add missing trailing semicolons to XDG *.desktop files
+	  (from Denis Silakov)
+
+- new version:
+	o rewrite check_elf_files in shell script
+	o skip symlinks for fix_eol
+
 * Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.19-1
 - new version:
 	o rewrite check_elf_files in shell script
