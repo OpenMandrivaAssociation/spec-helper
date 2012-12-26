@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.20
+Version:	0.31.21
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -37,6 +37,9 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Wed Dec 26 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.21-1
+- drop compress-files in favour of upstream brp-compress
+
 * Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.20-1
 - new version:
 	o add missing trailing semicolons to XDG *.desktop files
