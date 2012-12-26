@@ -40,14 +40,10 @@ make test
 * Wed Dec 26 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.21-1
 - drop compress-files in favour of upstream brp-compress
 
-* Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.20-1
+* Tue Dec 25 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.20-1
 - new version:
 	o add missing trailing semicolons to XDG *.desktop files
 	  (from Denis Silakov)
-
-- new version:
-	o rewrite check_elf_files in shell script
-	o skip symlinks for fix_eol
 
 * Wed Dec 19 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.19-1
 - new version:
