@@ -39,8 +39,8 @@ make test
 %changelog
 * Sun Jan  6 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.22-1
 new version:
-	o don't run fix_eol together with other helpers after %install,
-	  as it'll be run after %doc in stead
+	o don't run fix_eol together with other helpers after %%install,
+	  as it'll be run after %%doc in stead
 
 * Wed Dec 26 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.21-1
 - drop compress-files in favour of upstream brp-compress
