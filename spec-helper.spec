@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.22
+Version:	0.31.23
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -37,8 +37,13 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Sat Jan 12 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.23-1
+- new version:
+	o fix_file_permissions should fix library file permissions to be 755
+
+
 * Sun Jan  6 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.22-1
-new version:
+- new version:
 	o don't run fix_eol together with other helpers after %%install,
 	  as it'll be run after %%doc in stead
 
