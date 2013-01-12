@@ -11,7 +11,6 @@ Requires:	gettext
 BuildRequires:	perl(IPC::Run)
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Slurp)
-BuildRequires:	rpm >= 1:5.4.4-21
 BuildArch:	noarch
 
 %description
@@ -38,6 +37,7 @@ make test
 
 %changelog
 * Sat Jan 12 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.23-1
+- drop no longer necessary versioned rpm buildrequires
 - new version:
 	o fix_file_permissions should fix library file permissions to be 755
 
