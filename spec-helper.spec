@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.23
+Version:	0.31.24
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -36,6 +36,10 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Wed Jan 30 2013 Bernhard Rosenkränzer <bero@lindev.ch> 0.31.24-1
+- new version:
+	o fix fix_eol when dealing with filenames containing spaces
+
 * Sat Jan 12 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.23-1
 - drop no longer necessary versioned rpm buildrequires
 - new version:

@@ -1,3 +1,4 @@
----
-sources:
+removed_sources:
   spec-helper-0.31.23.tar.xz: c9e7f6123237be5b9e306356c360f7f698f036b1
+sources:
+  spec-helper-0.31.24.tar.xz: a99e3eb5c8552e76896587a2e3b3111ed0e83e1a
