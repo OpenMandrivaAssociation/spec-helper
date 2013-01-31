@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.24
+Version:	0.31.25
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -36,6 +36,10 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Thu Jan 31 2013 Bernhard Rosenkränzer <bero@lindev.ch> 0.31.25-1
+- new version:
+	o fix_file_permissions now fixes permissions of man & info pages
+
 * Wed Jan 30 2013 Bernhard Rosenkränzer <bero@lindev.ch> 0.31.24-1
 - new version:
 	o fix fix_eol when dealing with filenames containing spaces
