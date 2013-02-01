@@ -8,6 +8,7 @@ URL:		https://abf.rosalinux.ru/proyvind/spec-helper
 Source0:	%{name}-%{version}.tar.xz
 Requires:	findutils
 Requires:	gettext
+Requires:	chrpath
 BuildRequires:	perl(IPC::Run)
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Slurp)
@@ -38,6 +39,7 @@ make test
 %changelog
 * Thu Jan 31 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.25-1
 - new version:
+	o remove rpaths that has standard library search dirs from binaries
 	o fix_file_permissions now fixes permissions of man & info pages
 
 * Wed Jan 30 2013 Bernhard Rosenkränzer <bero@lindev.ch> 0.31.24-1
