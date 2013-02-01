@@ -36,7 +36,7 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
-* Thu Jan 31 2013 Bernhard Rosenkränzer <bero@lindev.ch> 0.31.25-1
+* Thu Jan 31 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.25-1
 - new version:
 	o fix_file_permissions now fixes permissions of man & info pages
 
