@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.25
+Version:	0.31.26
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -12,8 +12,6 @@ Requires:	chrpath
 BuildRequires:	perl(IPC::Run)
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Slurp)
-# needed by tests
-BuildRequires:	man info
 BuildArch:	noarch
 
 %description
@@ -39,6 +37,10 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Sun Feb 10 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.26-1
+- revert previous buildrequires change and fix the relevant regression in
+  'fix_file_permissions' in stead
+
 * Sun Feb 10 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.25-1
 - add man & info to buildrequires for tests to succesfully run
 - new version:
