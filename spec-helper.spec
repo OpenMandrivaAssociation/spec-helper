@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.26
+Version:	0.31.27
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -37,6 +37,9 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Wed Feb 13 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.27-1
+- fix regression in 'relink_symlinks' with symlinks pointing towards symlinks
+
 * Sun Feb 10 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.26-1
 - revert previous buildrequires change and fix the relevant regression in
   'fix_file_permissions' in stead
