@@ -37,6 +37,10 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Thu Feb 14 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.28-1
+- add support for passing specific directory to search within buildroot as
+  argument to fix_eol
+
 * Wed Feb 13 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.27-1
 - fix regression in 'relink_symlinks' with symlinks pointing towards symlinks
 
