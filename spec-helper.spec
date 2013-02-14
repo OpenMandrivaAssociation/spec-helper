@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.28
+Version:	0.31.29
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -37,6 +37,10 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Thu Feb 14 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.29-1
+- fix check for existence of directory specified to fix_eol, exit without
+  error if not existing
+
 * Thu Feb 14 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.28-1
 - add support for passing specific directory to search within buildroot as
   argument to fix_eol
