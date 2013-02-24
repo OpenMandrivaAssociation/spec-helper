@@ -37,6 +37,15 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Mon Feb 25 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.31-1
+- new version:
+	o define macro to be used with __os_stringbuf_post in macros shipped
+	  with spec-helper
+	o add support for passing specific directory to search within
+	  buildroot as argument to clean_perl
+	o make fix_eol strip away buildroot from second argument if
+	  specified
+
 * Wed Feb 21 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.30-1
 - only try removing rpath from dynamically linked ELF binaries
 
