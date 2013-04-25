@@ -1,5 +1,5 @@
 Name:		spec-helper
-Version:	0.31.31
+Version:	0.31.32
 Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
@@ -37,6 +37,10 @@ make test
 %{_sys_macros_dir}/%{name}.macros
 
 %changelog
+* Thu Feb 25 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.32-1
+- new version:
+	o remove_rpath: redirect errors from chrpath to /dev/null
+
 * Mon Feb 25 2013 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.31.31-1
 - new version:
 	o define macro to be used with __os_stringbuf_post in macros shipped
