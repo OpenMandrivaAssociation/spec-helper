@@ -15,7 +15,7 @@ BuildRequires:	perl(File::Slurp)
 BuildArch:	noarch
 
 %description
-Tools to ease the creation of rpm packages for the %{distribution} distribution.
+Tools to ease the creation of rpm packages for %{distribution}.
 Compress man pages using xz, convert links and perform some sanitizing on
 packages built...
 
