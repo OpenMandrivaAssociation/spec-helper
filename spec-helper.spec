@@ -4,7 +4,7 @@ Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
-URL:		https://abf.rosalinux.ru/proyvind/spec-helper
+URL:		https://abf.rosalinux.ru/moondrake/spec-helper
 Source0:	%{name}-%{version}.tar.xz
 Requires:	findutils
 Requires:	gettext
