@@ -1,11 +1,12 @@
 Name:		spec-helper
 Version:	0.31.31
-Release:	1
+Release:	2
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
 URL:		https://abf.rosalinux.ru/proyvind/spec-helper
 Source0:	%{name}-%{version}.tar.xz
+Patch0:		spec-helper-0.31.31-fix_xdg-no-dirs.patch
 Requires:	findutils
 Requires:	gettext
 Requires:	chrpath
@@ -15,12 +16,14 @@ BuildRequires:	perl(File::Slurp)
 BuildArch:	noarch
 
 %description
-Tools to ease the creation of rpm packages for the %{distribution} distribution.
+Tools to ease the creation of rpm packages for the
+%{distribution} distribution.
 Compress man pages using xz, convert links and perform some sanitizing on
 packages built...
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 
