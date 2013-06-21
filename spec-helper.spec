@@ -1,12 +1,11 @@
 Name:		spec-helper
-Version:	0.31.32
-Release:	2
+Version:	0.31.33
+Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
 URL:		https://abf.rosalinux.ru/moondrake/spec-helper
 Source0:	%{name}-%{version}.tar.xz
-Patch0:		spec-helper-0.31.31-fix_xdg-no-dirs.patch
 Requires:	findutils
 Requires:	gettext
 Requires:	chrpath
@@ -23,7 +22,6 @@ packages built...
 
 %prep
 %setup -q
-%apply_patches
 
 %build
 
