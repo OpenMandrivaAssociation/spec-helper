@@ -33,6 +33,6 @@ make test
 
 %files
 %doc README NEWS
-%{_bindir}/macroszification
+%{_bindir}/*
 %{_datadir}/spec-helper
 %{_sys_macros_dir}/%{name}.macros
