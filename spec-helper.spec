@@ -1,10 +1,10 @@
 Name:		spec-helper
-Version:	0.31.34
-Release:	2
+Version:	0.31.35
+Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
-URL:		https://abf.rosalinux.ru/moondrake/spec-helper
+URL:		https://abf.io/omv_software/spec-helper
 Source0:	%{name}-%{version}.tar.xz
 Requires:	findutils
 Requires:	gettext
