@@ -1,6 +1,6 @@
 Name:		spec-helper
-Version:	0.31.38
-Release:	2
+Version:	0.31.40
+Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
@@ -28,10 +28,8 @@ packages built...
 %install
 %makeinstall_std bindir=%{_bindir} rpmmacrosdir=%{_sys_macros_dir}
 
-%if "%{disttag}" != "mdk"
 %check
 make test
-%endif
 
 %files
 %doc README NEWS
