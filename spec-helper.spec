@@ -1,3 +1,5 @@
+%define dont_gprintify 1
+
 Name:		spec-helper
 Version:	0.31.46
 Release:	1
