@@ -1,8 +1,6 @@
-%define dont_gprintify 1
-
 Name:		spec-helper
-Version:	0.31.46
-Release:	2
+Version:	0.31.47
+Release:	1
 Summary:	Tools to ease the creation of rpm packages
 License:	GPLv2+
 Group:		Development/Other
@@ -34,6 +32,7 @@ packages built...
 
 %install
 %makeinstall_std bindir=%{_bindir} rpmmacrosdir=%{_sys_macros_dir}
+rm -f %{buildroot}%{_bindir}/spec-cleaner
 
 %check
 make test
