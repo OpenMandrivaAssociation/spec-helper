@@ -32,6 +32,7 @@ packages built...
 
 %install
 %makeinstall_std bindir=%{_bindir} rpmmacrosdir=%{_rpmmacrodir}
+mv %{buildroot}/%{_rpmmacrodir}/%{name}.macros %{buildroot}/%{_rpmmacrodir}/macros.%{name}
 rm -f %{buildroot}%{_bindir}/spec-cleaner
 
 %check
@@ -41,4 +42,4 @@ make test
 %doc README NEWS
 %{_bindir}/*
 %{_datadir}/spec-helper
-%{_rpmmacrodir}/%{name}.macros
+%{_rpmmacrodir}/macros.%{name}
