@@ -1,21 +1,11 @@
-Name:		spec-helper
-Version:	0.31.49
-Release:	2
 Summary:	Tools to ease the creation of rpm packages
+Name:		spec-helper
+Version:	0.31.50
+Release:	1
 License:	GPLv2+
 Group:		Development/Other
 URL:		https://github.com/OpenMandrivaSoftware/spec-helper
-Source0:	https://github.com/OpenMandrivaSoftware/spec-helper/archive/v%{version}.tar.gz
-# The python shebangs check is Fedora policy, and shouldn't break the build
-# for anyone else.
-# In the Fedora world: "Force python 2 or python 3"
-# In the rest of the world: "You can force python 2 or 3, or you can call
-# /usr/bin/python to get the system's default version that has all the
-# libraries available, and you'll automatically be updated to python 4
-# when it becomes available".
-# Calling python2 or python3 directly will break removing legacy cruft and
-# is just a workaround for code that needs to be updated...
-Patch0:		spec-helper-0.31.49-no-python-shebangs-check.patch
+Source0:	https://github.com/OpenMandrivaSoftware/spec-helper/archive/%{name}-%{version}.tar.xz
 Requires:	findutils
 Requires:	gettext
 Requires:	chrpath
@@ -41,8 +31,7 @@ packages built...
 %build
 
 %install
-%makeinstall_std bindir=%{_bindir} rpmmacrosdir=%{_rpmmacrodir}
-mv %{buildroot}/%{_rpmmacrodir}/%{name}.macros %{buildroot}/%{_rpmmacrodir}/macros.%{name}
+%make_install bindir=%{_bindir} rpmmacrodir=%{_rpmmacrodir}
 rm -f %{buildroot}%{_bindir}/spec-cleaner
 
 %check
