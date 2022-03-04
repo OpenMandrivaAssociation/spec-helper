@@ -1,11 +1,11 @@
 Summary:	Tools to ease the creation of rpm packages
 Name:		spec-helper
-Version:	0.31.50
+Version:	0.31.51
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
 URL:		https://github.com/OpenMandrivaSoftware/spec-helper
-Source0:	https://github.com/OpenMandrivaSoftware/spec-helper/archive/%{name}-%{version}.tar.xz
+Source0:	https://github.com/OpenMandrivaSoftware/spec-helper/archive/refs/tags/v%{version}.tar.gz
 Requires:	findutils
 Requires:	gettext
 Requires:	chrpath
