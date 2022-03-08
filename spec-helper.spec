@@ -1,6 +1,6 @@
 Summary:	Tools to ease the creation of rpm packages
 Name:		spec-helper
-Version:	0.31.51
+Version:	0.31.52
 Release:	1
 License:	GPLv2+
 Group:		Development/Other
