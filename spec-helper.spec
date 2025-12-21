@@ -9,6 +9,7 @@ Source0:	https://github.com/OpenMandrivaSoftware/spec-helper/archive/refs/tags/%
 Requires:	findutils
 Requires:	file
 Requires:	chrpath
+BuildRequires:	make
 BuildRequires:	perl(IPC::Run)
 BuildRequires:	perl(Digest::MD5)
 BuildRequires:	perl(File::Slurp)
